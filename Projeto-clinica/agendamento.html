@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vida+ Clínica | Agendamento</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a class="logo" href="index.html">
+            Vida<span>+</span>
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a class="active" href="agendamento.html">
+                Agendamento
+            </a>
+
+            <a href="consultas.html">
+                Minhas consultas
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main class="section">
+
+    <div class="container narrow">
+
+        <span class="tag">
+            Novo agendamento
+        </span>
+
+        <h1>
+            Agende sua consulta
+        </h1>
+
+        <p class="section-subtitle">
+            Preencha os campos abaixo para reservar seu horário.
+        </p>
+
+
+        <form class="form-card" action="consultas.html" method="get">
+
+            <div class="form-grid">
+
+
+                <label>
+
+                    Nome completo
+
+                    <input
+                        type="text"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    E-mail
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="seu@email.com"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Telefone
+
+                    <input
+                        type="tel"
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Especialidade
+
+                    <select name="especialidade" required>
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option>
+                            Clínica geral
+                        </option>
+
+                        <option>
+                            Cardiologia
+                        </option>
+
+                        <option>
+                            Dermatologia
+                        </option>
+
+                        <option>
+                            Ortopedia
+                        </option>
+
+                        <option>
+                            Pediatria
+                        </option>
+
+                        <option>
+                            Psicologia
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+
+                    Médico(a)
+
+                    <select name="medico" required>
+
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option>
+                            Dra. Ana Souza
+                        </option>
+
+                        <option>
+                            Dr. Carlos Lima
+                        </option>
+
+                        <option>
+                            Dra. Marina Alves
+                        </option>
+
+                    </select>
+
+                </label>
+
+
+                <label>
+
+                    Data
+
+                    <input
+                        type="date"
+                        name="data"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Horário
+
+                    <input
+                        type="time"
+                        name="horario"
+                        required
+                    >
+
+                </label>
+
+
+                <label class="full">
+
+                    Observações
+
+                    <textarea
+                        name="observacoes"
+                        rows="4"
+                        placeholder="Informe algo importante para o atendimento"
+                    ></textarea>
+
+                </label>
+
+            </div>
+
+
+            <div class="actions">
+
+                <a
+                    class="btn secondary"
+                    href="index.html"
+                >
+                    Voltar
+                </a>
+
+                <button
+                    class="btn primary"
+                    type="submit"
+                >
+                    Confirmar agendamento
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<footer>
+    Vida+ Clínica • Projeto acadêmico de IHC e Desenvolvimento Web
+</footer>
+
+</body>
+</html>
